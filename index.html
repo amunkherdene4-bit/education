@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UB Association | Strategic Workforce Development</title>
     <link href="favicon.ico" rel="icon" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        .avatar-placeholder {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #0047AB22, #0047AB44);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .avatar-placeholder svg {
+            width: 80px;
+            height: 80px;
+            opacity: 0.4;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,21 +45,21 @@
         </div>
     </div>
 
-    <!-- CORPORATE HEADER -->
+    <!-- HEADER -->
     <header class="navbar">
         <div class="container header-content">
-            <div class="header-left">
-                <!-- Hamburger Menu Trigger -->
+  
+          <div class="header-left">
                 <button class="menu-trigger" onclick="openNav()">&#9776; MENU</button>
-               <div class="logo">
-    <a href="#">
-      <img src="static/Logo.jpg" alt="UB Association Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
-        UB <b>ASSOCIATION</b>
-    </a>
-</div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="static/Logo.jpg" alt="UB Association Logo" style="height:40px; vertical-align:middle; margin-right:10px;">
+                        UB <b>ASSOCIATION</b>
+                    </a>
+                </div>
             </div>
             <nav class="desktop-nav">
-                <!-- Investors prioritize these links -->
+  
                 <a href="#impact">Impact Report</a>
                 <a href="#transparency">Transparency</a>
                 <a href="#partner">Partnerships</a>
@@ -54,67 +70,131 @@
     </header>
 
     <main>
-        <!-- HERO SECTION -->
-        <section class="hero">
-    <div class="container">
-        <h1>Building a Better Future, Together</h1>
-        
-        <p>Empowering communities through education, transparency, and sustainable partnerships. Join us in making a lasting impact.</p>
-        
-        <div class="hero-btns">
-            <a href="#impact" class="btn-primary">View Impact Report</a>
-            <a href="#partnerships" class="btn-secondary">Corporate Partnership</a>
-        </div>
-    </div>
-</section>
-<section class="about-section" id="about">
-    <div class="container">
-        <h2 class="section-title">Our Mission</h2>
-        <div class="about-content">
-            <p>
-                The <strong>UB Association SLogan Here</strong>is a premier language academy dedicated to fostering professional English communication and academic excellence. We believe that mastering the English language is the key to unlocking global opportunities and achieving your personal and professional dreams.
-            </p>
-            <p>
-                Our mission is to build a world where opportunities are abundant and everyone feels confident in their ability to achieve their dreams. Today, we carry this spirit forward by providing professional guidance and strategic support to our members.
-            </p>
-            <a href="#join" class="btn-join">Join Our Movement</a>
-        </div>
-    </div>
-</section>
 
-<section class="team-section" id="team">
-    <div class="container">
-        <h2 class="section-title">Board of Directors</h2>
-        <div class="team-grid">
-            <div class="team-card">
-                <div class="member-img">
-                    <img src="static/member1.jpg" alt="000000">
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Building a Better Future, Together</h1>
+                <p>Empowering communities through education, transparency, and sustainable partnerships. Join us in making a lasting impact.</p>
+                <div class="hero-btns">
+                    <a href="#impact" class="btn-primary">View Impact Report</a>
+                    <a href="#partnerships" class="btn-secondary">Corporate Partnership</a>
                 </div>
-                <h3>000000</h3>
-                <p class="role">PRESIDENT & FOUNDER</p>
-                <button class="btn-bio">Read Bio</button>
             </div>
-            <div class="team-card">
-                <div class="member-img">
-                    <img src="static/member2.jpg" alt="111111">
-                </div>
-                <h3>111111</h3>
-                <p class="role">VICE PRESIDENT</p>
-                <button class="btn-bio">Read Bio</button>
-            </div>
-            <div class="team-card">
-                <div class="member-img">
-                    <img src="static/member3.jpg" alt="222222">
-                </div>
-                <h3>222222</h3>
-                <p class="role">TREASURER</p>
-                <button class="btn-bio">Read Bio</button>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-        <!-- TRANSPARENCY SECTION -->
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="about-content">
+                    <p>
+                        The <strong>UB Association</strong> is a premier language academy dedicated to fostering professional English communication and academic excellence. We believe that mastering the English language is the key to unlocking global opportunities and achieving your personal and professional dreams.
+                    </p>
+                    <p>
+                        Our mission is to build a world where opportunities are abundant and everyone feels confident in their ability to achieve their dreams. Today, we carry this spirit forward by providing professional guidance and strategic support to our members.
+                    </p>
+                    <a href="#join" class="btn-join">Join Our Movement</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTS -->
+        <section class="about-section" id="events">
+            <div class="container">
+                <h2 class="section-title">Events</h2>
+                <div class="about-content">
+                    <p>Stay tuned for upcoming events hosted by UB Association. We regularly organize workshops, seminars, and networking opportunities for our members.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAINING -->
+        <section class="team-section" id="training">
+            <div class="container">
+                <h2 class="section-title">Training Programs</h2>
+                <div class="about-content" style="max-width:850px; margin:0 auto; text-align:center; color:#4a5568;">
+                    <p>We offer professional English communication training, academic preparation, and leadership development programs tailored to your goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWS -->
+        <section class="about-section" id="news">
+            <div class="container">
+                <h2 class="section-title">News</h2>
+                <div class="about-content">
+                    <p>The latest updates, announcements, and stories from UB Association and our community partners.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOK ONLINE -->
+        <section class="team-section" id="book">
+            <div class="container">
+                <h2 class="section-title">Book Online</h2>
+                <div class="about-content" style="max-width:850px; margin:0 auto; text-align:center; color:#4a5568;">
+                    <p>Reserve your spot in our programs and events online. Contact us to get started with your enrollment today.</p>
+                    <a href="#contact" class="btn-join" style="margin-top:20px;">Contact Us to Book</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section class="team-section" id="team">
+            <div class="container">
+                <h2 class="section-title">Board of Directors</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="member-img">
+                            <img src="static/member1.jpg" alt="President"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="avatar-placeholder" style="display:none;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#0047AB" stroke-width="1.5">
+                                    <circle cx="12" cy="8" r="4"/>
+                                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Member Name</h3>
+                        <p class="role">PRESIDENT & FOUNDER</p>
+                        <button class="btn-bio">Read Bio</button>
+                    </div>
+                    <div class="team-card">
+                        <div class="member-img">
+                            <img src="static/member2.jpg" alt="Vice President"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="avatar-placeholder" style="display:none;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#0047AB" stroke-width="1.5">
+                                    <circle cx="12" cy="8" r="4"/>
+                                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Member Name</h3>
+                        <p class="role">VICE PRESIDENT</p>
+                        <button class="btn-bio">Read Bio</button>
+                    </div>
+                    <div class="team-card">
+                        <div class="member-img">
+                            <img src="static/member3.jpg" alt="Treasurer"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="avatar-placeholder" style="display:none;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#0047AB" stroke-width="1.5">
+                                    <circle cx="12" cy="8" r="4"/>
+                                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Member Name</h3>
+                        <p class="role">TREASURER</p>
+                        <button class="btn-bio">Read Bio</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRANSPARENCY -->
         <section id="transparency" class="transparency-section">
             <div class="container">
                 <div class="your-section-class">
@@ -125,18 +205,17 @@
                     <div class="doc-card">
                         <h3>Board of Directors</h3>
                         <p>Strategic leadership and governance structure.</p>
-                        <a href="#" class="link">Meet Team →</a>
+                        <a href="#team" class="link">Meet Team →</a>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <!-- BONCHAT AI BOT -->
+    <!-- CHATBOT -->
     <div class="bonchat-container">
-        <button class="chat-toggle" onclick="toggleChat()">
-            💬 Let’s chat - BonChat?
-        </button>
+        <button class="chat-toggle" onclick="toggleChat()">💬 Let's chat - BonChat?</button>
         <div id="chatWindow" class="chat-ui">
             <div class="chat-head">
                 <span>BonChat Support</span>
@@ -152,7 +231,7 @@
         </div>
     </div>
 
-    <!-- IMPROVED FOOTER & CONTACT US -->
+    <!-- FOOTER -->
     <footer class="main-footer" id="contact">
         <div class="container footer-grid">
             <div class="footer-brand">
@@ -164,7 +243,7 @@
             <div class="footer-contact">
                 <h4>Contact Us</h4>
                 <p>Email: <a href="mailto:info@UBAssociation.org">info@UBAssociation.org</a></p>
-                <p> UB Association HQ</p>
+                <p>UB Association HQ</p>
             </div>
             <div class="footer-legal">
                 <h4>Legal</h4>
@@ -181,39 +260,80 @@
         </div>
     </footer>
 
-    <div id="loginModal" class="modal" style="display:none; position:fixed; z-index:999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
-        <div class="modal-content" style="background:white; margin:15% auto; padding:30px; width:350px; border-radius:12px; position: relative; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
-            <span class="close-btn" style="cursor:pointer; position: absolute; right: 20px; top: 15px; font-size: 24px;">&times;</span>
-            <h2 style="margin-top: 0; color: #333;">Welcome Back</h2>
-            <p style="color: #666; font-size: 14px; margin-bottom: 20px;">Please enter your details to sign in</p>
-            
-            <form id="authForm">
-                <div style="margin-bottom: 15px;">
-                    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Email Address</label>
-                    <input type="email" id="email" placeholder="name@example.com" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
-                </div>
-                
-                <div style="margin-bottom: 20px;">
-                    <label style="display: block; margin-bottom: 5px; font-weight: 500;">Password</label>
-                    <input type="password" id="password" placeholder="••••••••" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
-                </div>
+    <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
 
-                <button type="submit" style="width: 100%; padding: 12px; background: #0046ad; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Sign In</button>
-                
-                <p style="text-align: center; margin-top: 15px; font-size: 13px;">
-                    Don't have an account? <a href="#" style="color: #0046ad; text-decoration: none;">Create one</a>
+            <!-- TABS -->
+            <div style="display:flex; border-bottom:2px solid #e2e8f0; margin-bottom:24px;">
+                <button id="tabLogin" onclick="showTab('login')"
+                    style="flex:1; padding:12px; border:none; background:none; font-size:15px; font-weight:600; cursor:pointer; color:#0046ad; border-bottom:2px solid #0046ad; margin-bottom:-2px;">
+                    Sign In
+                </button>
+                <button id="tabSignup" onclick="showTab('signup')"
+                    style="flex:1; padding:12px; border:none; background:none; font-size:15px; font-weight:600; cursor:pointer; color:#94a3b8; border-bottom:2px solid transparent; margin-bottom:-2px;">
+                    Create Account
+                </button>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm">
+                <h2 style="margin:0 0 6px; color:#002d72; font-size:22px;">Welcome Back</h2>
+                <p style="color:#666; font-size:14px; margin-bottom:20px;">Sign in to your account</p>
+                <div class="input-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="name@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="••••••••" required>
+                </div>
+                <p id="loginError" style="color:#e74c3c; font-size:13px; margin-bottom:10px; min-height:18px;"></p>
+                <button type="submit" class="submit-btn">Sign In</button>
+                <p style="text-align:center; margin-top:15px; font-size:13px; color:#555;">
+                    Don't have an account?
+                    <a href="#" onclick="showTab('signup')" style="color:#0046ad; font-weight:600;">Create one</a>
                 </p>
             </form>
-        </div>
-    </div>
+
+            <!-- SIGN UP FORM -->
+            <form id="signupForm" style="display:none;">
+                <h2 style="margin:0 0 6px; color:#002d72; font-size:22px;">Create Account</h2>
+                <p style="color:#666; font-size:14px; margin-bottom:20px;">Join UB Association today</p>
+                <div class="input-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="John Doe" required>
+                </div>
+                <div class="input-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" placeholder="name@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="At least 6 characters" required>
+                </div>
+                <div class="input-group">
+                    <label for="signupConfirm">Confirm Password</label>
+                    <input type="password" id="signupConfirm" placeholder="••••••••" required>
+                </div>
+                <p id="signupError" style="color:#e74c3c; font-size:13px; margin-bottom:10px; min-height:18px;"></p>
+                <div id="signupSuccess" style="display:none; background:#f0fdf4; border:1px solid #86efac; border-radius:8px; padding:14px; margin-bottom:16px; color:#166534; font-size:14px;">
+                    ✅ Account created! Please check your email to confirm your account.
+                </div>
+                <button type="submit" class="submit-btn">Create Account</button>
+                <p style="text-align:center; margin-top:15px; font-size:13px; color:#555;">
+                    Already have an account?
+                    <a href="#" onclick="showTab('login')" style="color:#0046ad; font-weight:600;">Sign in</a>
+                </p>
             </form>
+
         </div>
     </div>
-<link rel="stylesheet" href="static/style.css">
-<script src="static/script.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="static/script.js"></script>
 
 </body>
-
-</html>
-
-   
+    </html>
