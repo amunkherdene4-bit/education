@@ -1113,3 +1113,83 @@ html, body {
         align-items: center;
     }
 }
+@media (max-width: 768px) {
+    .header-content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;  /* Logo голлуулах */
+        padding: 8px 15px;
+    }
+
+    .header-left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;  /* Logo голлуулах */
+        gap: 0;
+    }
+
+    .menu-trigger {
+        position: absolute;
+        left: 15px;               /* MENU зүүн талд */
+    }
+
+    /* Settings товч баруун дээд буланд */
+    .settings-trigger {
+        position: absolute !important;
+        right: 15px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        display: flex !important;
+    }
+
+    /* Desktop nav нуух, гэхдээ settings харуулах */
+    .desktop-nav {
+        display: none !important;
+    }
+
+    /* Logo томруулах */
+    .logo a img {
+        height: 75px !important;
+    }
+}/* Desktop: settings nav дотор харагдана */
+.mobile-settings { display: none; }
+
+@media (max-width: 768px) {
+    /* Mobile дээр nav-ийн settings нуух */
+    .desktop-nav .settings-trigger { display: none !important; }
+    
+    /* Mobile settings товч харуулах */
+    .mobile-settings {
+        display: flex !important;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        color: var(--text-muted);
+        width: 36px;
+        height: 36px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-content {
+        position: relative;
+        justify-content: center;
+    }
+
+    .header-left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu-trigger {
+        position: absolute;
+        left: 15px;
+    }
+}
